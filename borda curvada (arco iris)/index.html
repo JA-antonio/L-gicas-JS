@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        border: 0;
+    }
+
+    html , body {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+
+    div#borda-curvada {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+    background: radial-gradient(circle, #DE1020, #D6152D, #CC1B42, #BD255F, #982257, #661A3C, #421328, #32101F, #200C15); /* Gradiente da borda */
+    border-top-left-radius: 50% 30%;
+    border-top-right-radius: 50% 30%;
+    z-index: 12;
+}
+div#borda-curvada::before {
+    content: '';
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #000000; /* C2r de fundo preta */
+    border-top-left-radius: 50% 30%;
+    border-top-right-radius: 50% 30%;
+}
+
+div#bloco {
+    position: absolute;
+    top: 0px;
+    justify-content: baseline;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(teste.webp);
+    width: 100%;
+    height: 450px;
+    z-index: 8;
+}
+
+span#cirulo {
+    display: flex;
+    position: absolute;
+    top: 294px;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    border-top-right-radius: 50% 30%;
+    border-top-left-radius: 50% 30%; 
+    background: linear-gradient(180deg, #141d47b9 1%, #141d46b2 2%, #131c45b0 3%, #131b41cc 4%, #121a3fc2 5%, #12193dc5 6%, #11193bcc 7%, #0f1534be 8%, 
+    #0f1532c7 9%, rgba(12, 17, 41, 0.781) 10%, #0b1027c5 11%, #0a0e21c2 12%, #090c1dc7 13%, #0a0e21c0 14%, #080c1bbd 15%, #060a17b6 16%, #070a19b2 17%, #060814b6 18%, rgba(0, 0, 0, 0.705) 100%);
+    z-index: 13;
+}
+
+span#sombra {
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    color: red;
+    z-index: 14;
+}
+
+</style>
+</head>
+<body>
+    
+    <div id="bloco"></div>
+
+    <div id="borda-curvada"></div>
+
+    <span id="cirulo">
+        <span id="sombra"></span>
+    </span>
+
+</body>
+</html>

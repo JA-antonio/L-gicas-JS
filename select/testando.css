@@ -1,0 +1,42 @@
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+select {
+
+    appearance: none; /* Remove a aparência padrão do select em diferentes navegadores */
+    -webkit-appearance: none; /* Para navegadores WebKit como Safari e Chrome */
+    -moz-appearance: none; /* Para navegadores Mozilla como Firefox */
+
+    border: 1 solid white;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    padding: 5px 20px 5px 5px;
+    border-radius: 4px;
+    width: 155px;
+    height: 35px;
+    text-align: center;
+    font-weight: normal;
+    font-size: medium;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"%3E%3Cpath fill="white" d="M0 0l5 6 5-6z"/%3E%3C/svg%3E');
+    background-size: 15px;
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    outline: 2px solid white;
+}
+
+option {
+    background-color: white;
+    color: black;
+}
