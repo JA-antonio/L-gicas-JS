@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: fantasy; 
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+:root {
+    --gradiente: linear-gradient(
+        to top,
+        blue,
+        gray
+    )
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+
+section {
+    border: 1px solid white;
+}
+
+h1 {
+    color: white;
+    background-image: var(--gradiente);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
