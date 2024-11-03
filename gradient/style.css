@@ -28,10 +28,20 @@ body {
 }
 
 section {
-    border: 1px solid white;
+    
+}
+
+section::after {
+    content: '';
+    height: 15px;
+    width: 100%;
+    display: block;
+    background-image:var(--gradiente);
+    border-radius: 10px 10px 10px 10px;
 }
 
 h1 {
+    padding: 10px;
     color: white;
     background-image: var(--gradiente);
     background-clip: text;
