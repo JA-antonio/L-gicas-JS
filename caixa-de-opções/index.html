@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu de Opções</title>
     <style>
-
+        html, body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        aside {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 50px;
+            width: 100%;
+            background-color: black;
+        }
+        p#opção-inicial {
+            color: white;
+            font-size: 20px;
+            margin: 0;
+            transform: translate(50px, 50%);
+        }
     </style>
 </head>
 <body>
     
     <aside>
-
-        <label for="imenu"></label>
-        <select name="menu" id="imenu">
-            <option value="Produtos" mouseover="entrou()" id="prd">Produtos</option>
-            <option value="maquininha" selected disabled class="op-padrao">Maquininha</option>
-            <option value="suporte" selected disabled class="op-padrao">suporte</option>
-            <option value="gilette" select disabled class="op-padrao">gilete</option>
-        </select>
-
+        <p id="opção-inicial">
+            produtos
+        </p>
     </aside>
+        
 </body>
     <script src="index.js"></script>
 </html>
