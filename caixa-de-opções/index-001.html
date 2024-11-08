@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        aside {
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            place-items: center;
+        }
+        p {
+            font-size: 15px;
+            margin-top: 19.2px;
+            padding-bottom: 12.5px;
+            color: white;  
+        }
+        p:hover {
+            border-width: 10px;
+            border-color: red;
+            transition: border-width 0.5s, border-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <p id="p-01">
+            Produtos
+        </p>
+    </aside>
+</body>
+<script src="logica-001.js"></script>
+</html>
