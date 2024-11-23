@@ -1,4 +1,4 @@
 
-setTimeout(function(){
-    document.querySelector('div#classdiv').classList.add('mostrar');
-},1000);
+setTimeout(Mouseover(){ 
+    document.querySelector('div#div001').classList.add('Mostrar');
+},2000)

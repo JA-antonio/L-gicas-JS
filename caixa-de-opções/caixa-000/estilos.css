@@ -37,11 +37,11 @@ h1 {
 
 /* h1:hover ~div#div001 {
     display: block;
-}    */
+}  */
 
 div#div001 {
-    opacity: 1;
-    transition: opacity 1s ease-in;
+    opacity: 0;
+    transition: opacity 2s ease-in;
     display: none;
     height: 50px;
     width: 100px;
@@ -50,8 +50,5 @@ div#div001 {
     top: 75px;
     left: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 0px 0px 15px 15px;
 }
-
-/* h1:hover ~ div.classdiv.mostrar {
-    opacity: 1;
-} */
