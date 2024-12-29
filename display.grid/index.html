@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        * {
+            margin: 0;
+            color: white;
+        }
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+        main {
+            height: 500px;
+            width: 100%;
+            background-color: aqua;
+            
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+
+        }
+
+        .divs {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+        } 
+
+        #div000 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        #div001 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="divs" id="div000">div000</div>
+        <div class="divs" id="div001">div001</div>
+        <div class="divs" id="div002"></div>
+        <div class="divs" id="div003"></div>
+        <div class="divs" id="div004"></div>
+        <div class="divs" id="div005"></div>
+        
+    </main>
+</body>
+</html>
